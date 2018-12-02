@@ -1,0 +1,666 @@
+@import url(reset.css);
+
+#bg{
+     position:fixed;
+     z-index: -1;
+     top:0;
+     left:0; 
+     min-width:100%;
+     min-height:100%;
+}
+
+header{
+    height: 185px;
+    margin-bottom: 30px;
+}
+
+#header_bg{
+    height: 130px;
+    background: url(../images/header_bg.jpg)repeat-x;
+	min-width:1320px;
+}
+
+.menu_bg{
+     background: url(../images/menu_bg.png)repeat-x;
+     min-width:1320px;
+}
+
+nav{
+    height: 63px;
+    max-width:1200px;
+    min-width:980px;
+    position:relative;
+    margin: 0 auto;
+}
+
+nav ul{
+    float: right;
+    margin-right: 100px;
+}
+nav ul li{
+     float: left;
+     margin-top: 5px;
+}
+nav ul li a{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding:18px 15px;
+    color: white;
+    display:block;
+    transition: 0.5s; 
+}
+
+nav ul li a:hover{
+    background: #ff6666;
+    transition: 0.5s; 
+    margin-left: 7px;
+}
+
+
+.menu__list{ 
+position: relative; 
+} 
+
+.menu__drop li a{
+    width: 160px;
+    border-bottom:1px solid #666;
+}
+
+.menu__drop li a:hover{
+    margin-left:0;
+}
+.menu__drop{ 
+position: absolute; 
+opacity:0; 
+z-index: 2; 
+margin-top: 4px;
+top:-9999em; 
+transition: 0.5s opacity; 
+background: #333;
+} 
+.menu__list:hover .menu__drop{ 
+opacity: 1; 
+top: 49px; 
+} 
+/*Конец всплывающего меню*/ 
+
+/*иконки для всплывающих менюшек*/ 
+.menu__list::after{ 
+content:" "; 
+position: absolute; 
+border: 5px solid; 
+border-color: transparent transparent #ff6666 transparent; 
+bottom: 2.1px; 
+right: 2.7em; 
+transition: 0.5s; 
+} 
+
+.menu__list:hover::after{ 
+transform: scaleY(-1); 
+} 
+
+
+
+
+aside .anime_container .news_back1,aside .anime_container .news_back2{
+     color: red;
+    cursor: pointer;
+    width: 70px;
+    display: none;
+    margin-top: -30px;
+}
+
+#logo{
+    position: fixed;
+    margin-left: 50px;
+    position: absolute;
+    margin-top: -17px;
+}
+
+.headhesive{
+    position: fixed;
+    transition: 0.5s; 
+    transform: translateY(-115%);
+    width: 100%;
+    z-index: 2;
+}
+
+.headhesive--stick{
+    transform: translateY(15%);
+}
+
+.top-cat{
+    width: 140px;
+    height: 151px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    opacity: 0.6;
+}
+
+.top-cat:hover{
+    opacity: 1;
+}
+
+
+#wrapper{
+    margin: 0 auto;
+    width: 1300px;
+    height: auto;
+}
+
+aside{
+    width: 341px;
+    float: right;
+    height: auto;
+}
+
+aside .anime_container{
+    background: white;
+        line-height: 1.5em;
+
+}
+
+aside .anime_container p{
+   padding: 10px;
+}
+
+aside p{
+    text-indent: 1em;
+    text-align: left;
+}
+
+aside h2{
+    font: 20px sans-serif; 
+    color: black;
+    font-weight: bold;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+aside .popular{
+    margin-top: 10px;
+    background: white;
+}
+
+aside .popular ul li {
+    padding:10px;
+    font: 20px sans-serif; 
+    background: #EFEFE7;
+    margin-bottom: 5px;
+}
+
+aside .popular ul li a{
+    color: black;
+ 
+}
+
+aside .popular ul li a:hover{
+    color: red;
+}
+
+aside .popular ul li .p_janr{
+    font: 11px sans-serif;
+    color: red;
+    padding: 0px;
+    text-indent: 0;
+}
+
+aside .popular ul li p span{
+    float: right;
+     color: red;
+    font-family:  Sans;
+    margin-top: -42px;
+    font-size: 40px;
+}
+
+aside h2{
+    border-top:4px solid #FF6666;
+}
+
+section{
+    background: #fff;
+    width: 949px;
+    height: auto;
+    padding-bottom:10px;
+    border-top:4px solid #FF6666;
+}
+
+article{
+    height: 480px;
+    padding-top: 38px;
+    padding-left: 18px;
+}
+
+figure{
+    width: 280px;
+    height: 385px;
+}
+
+.left{
+    float: left;
+    margin-left: 20px;
+
+}
+
+section article figure p{
+    font: 14px sans-serif; 
+    color: rgb(175, 174, 174); 
+    text-align: center;
+}
+
+section article figure p span{
+    font: 12px sans-serif; 
+    color: rgb(175, 174, 174); 
+    text-align: center;
+}
+
+section article figure a{
+    font: 12px sans-serif; 
+    text-align: center;
+    color: red;
+    text-decoration: none;
+}
+
+section article figure a:hover{
+    text-decoration: underline;
+}
+
+section article figure h2{
+    text-align: center;
+}
+
+section article figure h2 a{
+    font: 20px sans-serif; 
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: none;
+}
+
+section article figure h2 a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+/*Свойства для контейнера*/
+.rating {
+    position:relative;
+    height:280px;
+    width:385px;
+    margin:0 auto;
+    cursor:pointer;
+    z-index: 0;
+}
+/*Свойства для изображения в контейнере*/
+.rating img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+/*100% прозрачность при наведении на изображение*/
+.rating img.img_bottom:hover {
+    opacity:0.2;
+}
+
+.title{
+    margin-top: 387px;
+}
+
+section .load{
+    display: none;
+}
+
+
+section .button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom:10px; 
+    background: -moz-linear-gradient(#FF6666, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#FF6666), to(#EBFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6666', endColorstr='#EBFFFF');
+    padding: 3px 7px;
+    color: #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    cursor: pointer;
+}
+
+footer{
+    min-width: 1320px;
+    background:  #282828;
+    height: auto;
+    overflow: hidden;
+}
+
+footer .footer_content{
+    width: 1200px;
+    margin:0 auto;
+    margin-top: 28px;
+
+}
+
+footer .footer_box{
+    width: 250px;
+    float: left;
+    margin-left:60px;
+    margin-bottom: 40px;
+    color:#fff;
+}
+
+footer .footer_box h2{
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+
+footer .footer_box ul li{
+    margin-top: 18px;
+}
+
+footer .footer_box ul li a{
+     color:#fff;
+     text-decoration: none;
+     padding:10px 10px;
+     width: 350px;
+     transition: 0.5s all;
+}
+
+footer .footer_box ul li a:hover{
+    background: #E70C2F;
+    padding: 10px 20px 10px 20px;
+}
+
+footer .footer_box ul li a::before{
+    content: "\203A";
+    margin-right: 15px;
+}
+
+
+
+footer .footer_box:first-child{
+    width: 210px;
+    line-height: 1.1em;
+}
+
+footer .footer_box_ongoing{
+    width: 250px;
+    float: left;
+    margin-left:60px;
+    margin-bottom: 40px;
+    color:#fff;
+}
+
+footer .footer_box_ongoing h2{
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+
+footer .footer_box_ongoing ul li{
+    margin-top: 18px;
+}
+
+footer .footer_box_ongoing ul li a{
+     color:#fff;
+     text-decoration: none;
+     padding:10px 10px;
+     width: 350px;
+     transition: 0.5s all;
+}
+
+footer .footer_box_ongoing ul li a:hover{
+    background: #E70C2F;
+    padding: 10px 20px 10px 20px;
+}
+
+footer .footer_box_ongoing ul li a::before{
+    content: "\203A";
+    margin-right: 15px;
+}
+
+
+
+footer .footer_box:first-child{
+    width: 210px;
+    line-height: 1.1em;
+}
+/*form*/
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ .login-submit, .login-submit:before, .login-submit:after {
+   margin-right:-15px;
+}
+
+a {
+  color: #00a1d2;
+  text-decoration: none;
+}
+
+.login {
+  position: relative;
+
+  width: 400px;
+
+  font-weight: 300;
+  color: #a8a7a8;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.8);
+}
+.form{
+    margin-left: -150px;
+    margin-top:  20px;
+}
+
+.login p {
+  margin: 0 0 10px;
+}
+
+input, button, label {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=password] {
+  padding: 0 10px;
+  width: 300px;
+  height: 40px;
+  color: #bbb;
+  text-shadow: 1px 1px 1px black;
+  background: rgba(0, 0, 0, 0.16);
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+input[type=text]:focus, input[type=password]:focus {
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  outline: 0;
+}
+
+label {
+  float: left;
+  width: 100px;
+  line-height: 40px;
+  padding-right: 10px;
+  font-weight: 100;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.login-submit {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 32px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+.login-submit:before, .login-submit:after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+}
+.login-submit:before {
+  top: 28px;
+  left: -4px;
+  width: 4px;
+  height: 10px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+}
+.login-submit:after {
+  top: -4px;
+  bottom: -4px;
+  right: -4px;
+  width: 36px;
+}
+
+.login-button {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  padding: 0 0 48px;
+  /* Fix wrong positioning in Firefox 9 & older (bug 450418) */
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  /* Must use another pseudo element for the gradient background because Webkit */
+  /* clips the background incorrectly inside elements with a border-radius.     */
+}
+.login-button:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background: #00a2d3;
+  border-radius: 24px;
+  background-image: -webkit-linear-gradient(top, #00a2d3, #0d7796);
+  background-image: -moz-linear-gradient(top, #00a2d3, #0d7796);
+  background-image: -o-linear-gradient(top, #00a2d3, #0d7796);
+  background-image: linear-gradient(to bottom, #00a2d3, #0d7796);
+  -webkit-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+.login-button:active:before {
+  background: #0591ba;
+  background-image: -webkit-linear-gradient(top, #0591ba, #00a2d3);
+  background-image: -moz-linear-gradient(top, #0591ba, #00a2d3);
+  background-image: -o-linear-gradient(top, #0591ba, #00a2d3);
+  background-image: linear-gradient(to bottom, #0591ba, #00a2d3);
+}
+.login-button:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 25px;
+  height: 19px;
+  background: url("../img/arrow.png") 0 0 no-repeat;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.lt-ie9 input[type=text], .lt-ie9 input[type=password] {
+  line-height: 40px;
+  background: #282828;
+}
+.lt-ie9 .login-submit {
+  position: absolute;
+  top: 12px;
+  right: -28px;
+  padding: 4px;
+}
+.lt-ie9 .login-submit:before, .lt-ie9 .login-submit:after {
+  display: none;
+}
+.lt-ie9 .login-button {
+  line-height: 48px;
+}
+.lt-ie9 .about {
+  background: #313131;
+}
+
+/* ����� ���� vladmaxi, ����� ������� */
+.vladmaxi-top{
+	line-height: 24px;
+	font-size: 11px;
+	background: #eee;
+	text-transform: uppercase;
+	z-index: 9999;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	font-family: calibri;
+	font-size: 13px;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	-webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+}
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+
+.vladmaxi-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.vladmaxi-top a:hover{
+	background: #fff;
+}
+.vladmaxi-top span.right{
+	float: right;
+}
+.vladmaxi-top span.right a{
+	float: left;
+	display: block;
+}

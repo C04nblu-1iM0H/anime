@@ -1,0 +1,254 @@
+@import url(reset.css);
+
+
+#bg{
+     position:fixed;
+     z-index: -1;
+     top:0;
+     left:0; 
+     min-width:100%;
+     min-height:100%;
+}
+
+header{
+    height: 185px;
+    margin-bottom: 30px;
+}
+
+#header_bg{
+    height: 130px;
+    background: url(../images/header_bg.jpg)repeat-x;
+	min-width:1320px;
+  
+}
+
+.menu_bg{
+     background: url(../images/menu_bg.png)repeat-x;
+     min-width:1320px;
+}
+
+nav{
+    height: 63px;
+    max-width:1200px;
+    min-width:980px;
+    position:relative;
+    margin: 0 auto;
+}
+
+nav ul{
+    float: right;
+    margin-right: 100px;
+}
+nav ul li{
+     float: left;
+     margin-top: 1px;
+}
+nav ul li a{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding:18px 15px;
+    color: white;
+    display:block;
+    transition: 0.5s; 
+}
+
+nav ul li a:hover{
+    background: #ff6666;
+    transition: 0.5s; 
+    margin-left: 7px;
+}
+
+#logo{
+    margin-left: 130px;
+    position: absolute;
+    margin-top: -17px;
+}
+
+.headhesive{
+    position: fixed;
+    transition: 0.5s; 
+    transform: translateY(-115%);
+    width: 100%;
+    z-index: 2;
+}
+
+.headhesive--stick{
+    transform: translateY(15%);
+}
+
+
+
+.menu__list{ 
+position: relative; 
+} 
+
+.menu__drop li a{
+    width: 160px;
+    border-bottom:1px solid #666;
+}
+
+.menu__drop li a:hover{
+    margin-left:0;
+}
+
+.menu__drop{ 
+position: absolute; 
+opacity:0; 
+z-index: 2; 
+margin-top: 4px;
+top:-9999em; 
+transition: 0.5s opacity; 
+background: #333;
+} 
+.menu__list:hover .menu__drop{ 
+opacity: 1; 
+top: 49px; 
+} 
+/*Конец всплывающего меню*/ 
+
+/*иконки для всплывающих менюшек*/ 
+.menu__list::after{ 
+content:" "; 
+position: absolute; 
+border: 5px solid; 
+border-color: transparent transparent #ff6666 transparent; 
+bottom: 2.1px; 
+right: 2.7em; 
+transition: 0.5s; 
+} 
+
+.menu__list:hover::after{ 
+transform: scaleY(-2); 
+} 
+
+
+section{
+     background: #fff;
+     padding-bottom:10px;
+     width: 1300px;
+     padding: 10px;
+     height:480px;
+     margin: 0 auto;
+}
+
+section h2 span{
+     font-size: 21px;
+     padding: 10px 0;
+     color: #000;
+}
+
+section p a{
+     color: #FF6666;
+     text-decoration: none;
+}
+
+section p a:hover{
+    text-decoration: underline;
+}
+
+section h2{
+     font-size: 21px;
+     padding: 10px 0;
+     color: #FF6666;
+}
+
+section article #faq .faq__item{
+    background: #E2E2E2;
+    margin-top: 4px;
+    padding: 10px 15px;
+    border-left: 3px solid #FF6666;
+    cursor: pointer;
+    border-bottom: 1px solid #ACADAD;
+    border-right: 1px solid #ACADAD;
+}
+ 
+ section article  .js-faq{
+     color: black;
+     text-decoration: none;
+ }
+ 
+
+section p,section ol li{
+    line-height: 1.3em;
+    color: #333;
+    width: 930px;
+}
+
+section .FROM_RUSSIA{
+    margin-bottom: 100px;
+}
+
+section ol li{
+    margin-left: 15px;
+    list-style-type: decimal;
+}
+
+section article .drop_text{
+    display: none;
+    width: 930px;
+    color: #4E4E53;
+    padding: 5px 0;
+    line-height: 1.3em;
+    border-top:1px solid #ACADAD;
+    margin-top: 5px;
+}
+
+footer{
+    min-width: 1320px;
+    background:  #282828;
+    height: auto;
+    overflow: hidden;
+
+}
+
+footer .footer_content{
+    width: 1200px;
+    margin:0 auto;
+    margin-top: 28px;
+
+}
+
+footer .footer_box{
+    width: 250px;
+    float: left;
+    margin-left:60px;
+    margin-bottom: 40px;
+    color:#fff;
+}
+
+footer .footer_box h2{
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+
+footer .footer_box ul li{
+    margin-top: 18px;
+}
+
+footer .footer_box ul li a{
+     color:#fff;
+     text-decoration: none;
+     padding:10px 10px;
+     transition: 0.5s all;
+}
+
+footer .footer_box ul li a:hover{
+    background: #E70C2F;
+    padding: 10px 20px 10px 20px;
+}
+
+footer .footer_box ul li a::before{
+    content: "\203A";
+    margin-right: 15px;
+}
+
+
+
+footer .footer_box:first-child{
+    width: 210px;
+    line-height: 1.1em;
+}
+

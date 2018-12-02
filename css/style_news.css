@@ -1,0 +1,330 @@
+@import url(reset.css);
+
+#bg{
+     position:fixed;
+     z-index: -1;
+     top:0;
+     left:0; 
+     min-width:100%;
+     min-height:100%;
+}
+
+header{
+    height: 185px;
+    margin-bottom: 30px;
+}
+
+#header_bg{
+    height: 130px;
+    background: url(../images/header_bg.jpg)repeat-x;
+	min-width:1320px;
+  
+}
+
+.menu_bg{
+     background: url(../images/menu_bg.png)repeat-x;
+     min-width:1320px;
+}
+
+nav{
+    height: 63px;
+    max-width:1200px;
+    min-width:980px;
+    position:relative;
+    margin: 0 auto;
+}
+
+nav ul{
+    float: right;
+    margin-right: 100px;
+}
+nav ul li{
+     float: left;
+     margin-top: 1px;
+}
+nav ul li a{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding:18px 15px;
+    color: white;
+    display:block;
+    transition: 0.5s; 
+}
+
+nav ul li a:hover{
+    background: #ff6666;
+    transition: 0.5s; 
+    margin-left: 7px;
+}
+
+.menu__list{ 
+position: relative; 
+} 
+
+.menu__drop li a{
+    width: 160px;
+    border-bottom:1px solid #666;
+}
+.menu__drop li a:hover{
+    margin-left:0;
+}
+.menu__drop{ 
+position: absolute; 
+opacity:0; 
+z-index: 2; 
+margin-top: 4px;
+top:-9999em; 
+transition: 0.5s opacity; 
+background: #333;
+} 
+.menu__list:hover .menu__drop{ 
+opacity: 1; 
+top: 49px; 
+} 
+/*Конец всплывающего меню*/ 
+
+/*иконки для всплывающих менюшек*/ 
+.menu__list::after{ 
+content:" "; 
+position: absolute; 
+border: 5px solid; 
+border-color: transparent transparent #ff6666 transparent; 
+bottom: 2.1px; 
+right: 2.7em; 
+transition: 0.5s; 
+} 
+
+.menu__list:hover::after{ 
+transform: scaleY(-2); 
+} 
+
+
+#logo{
+    margin-left: 50px;
+    position: absolute;
+    margin-top: -17px;
+}
+
+.headhesive{
+    position: fixed;
+    transition: 0.5s; 
+    transform: translateY(-115%);
+    width: 100%;
+    z-index: 2;
+}
+
+.headhesive--stick{
+    transform: translateY(15%);
+}
+
+#wrapper{
+    padding-left: 18px;
+    margin: 0 auto;
+    width: 1319px;
+    height: auto;
+}
+
+section{
+    background: #fff;
+    width: 960px;
+    border-top: 4px solid #FF6666;
+}
+
+section article{
+     margin-bottom: 20px;
+     border-bottom: 4px solid #FF6666;
+     padding: 10px;
+}
+
+.last{
+    border:0;
+}
+
+section article ol{
+    list-style-type: decimal;
+    margin-left: 25px;
+    margin-top: 5px;
+    line-height: 1.3em;
+    color: rgb(121, 121, 121);
+    font-family: sans-serif;
+    size: 14px;
+    margin-bottom: 20px;
+}
+
+section article p{
+    margin-top: 5px;
+    size: 14px;
+    font-family: sans-serif;
+    color: rgb(121, 121, 121);
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+
+section article h2{
+    font-size: 44px;
+    margin-bottom: 5px;
+}
+
+section article img{
+    margin-bottom: 5px;
+}
+
+aside{
+    width: 341px;
+    float: right;
+    height: auto;
+}
+
+aside .anime_container{
+    background: white;
+    line-height: 1.5em;
+
+}
+
+aside .anime_container p{
+   padding: 10px;
+}
+
+aside p{
+    text-indent: 1em;
+    text-align: left;
+}
+
+aside h2{
+    font: 20px sans-serif; 
+    color: black;
+    font-weight: bold;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+aside .popular{
+    margin-top: 10px;
+    background: white;
+}
+
+aside .popular ul li {
+    padding:10px;
+    font: 20px sans-serif; 
+    background: #EFEFE7;
+    margin-bottom: 5px;
+}
+
+aside .popular ul li a{
+    color: black;
+    text-decoration: none;
+ 
+}
+
+aside .popular ul li a:hover{
+    color: red;
+}
+
+aside .popular ul li .p_janr{
+    font: 11px sans-serif;
+    color: red;
+    padding: 0px;
+    text-indent: 0;
+}
+
+aside .popular ul li p span{
+    float: right;
+     color: red;
+    font-family:  Sans;
+    margin-top: -42px;
+    font-size: 40px;
+}
+
+aside h2{
+    border-top:4px solid #FF6666;
+}
+
+.top-cat{
+    width: 140px;
+    height: 151px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    opacity: 0.6;
+}
+
+.top-cat:hover{
+    opacity: 1;
+}
+
+footer{
+    min-width: 1320px;
+    background:  #282828;
+    height: auto;
+    overflow: hidden;
+}
+
+footer .footer_content{
+    width: 1200px;
+    margin:0 auto;
+    margin-top: 28px;
+
+}
+
+footer .footer_box{
+    width: 250px;
+    float: left;
+    margin-left:60px;
+    margin-bottom: 40px;
+    color:#fff;
+}
+
+footer .footer_box h2{
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+
+footer .footer_box ul li{
+    margin-top: 18px;
+}
+
+footer .footer_box ul li a{
+     color:#fff;
+     text-decoration: none;
+     padding:10px 10px;
+     transition: 0.5s all;
+}
+
+footer .footer_box ul li a:hover{
+    background: #E70C2F;
+    padding: 10px 20px 10px 20px;
+}
+
+footer .footer_box ul li a::before{
+    content: "\203A";
+    margin-right: 15px;
+}
+
+footer .footer_box:first-child{
+    width: 200px;
+    line-height: 1.1em;
+}
+
+section article .news1 ,section article .news2,section article .news3,section article .news4{
+    color: red;
+    display: block;
+    cursor: pointer;
+    width: 83px;
+}
+
+section article .news_content1 ,section article .news_content2,section article .news_content3,section article .news_content4{
+    display: none;
+}
+
+section article .news_back1 ,section article .news_back2,section article .news_back3,section article .news_back4{
+    color: red;
+    cursor: pointer;
+    width: 70px;
+}
+
+.news_content2  p,.news_content3  p,.news_content4  p{
+    margin-top: -20px;
+}

@@ -1,0 +1,315 @@
+@import url(reset.css);
+
+#bg{
+     position:fixed;
+     z-index: -1;
+     top:0;
+     left:0; 
+     min-width:100%;
+     min-height:100%;
+}
+
+header{
+    height: 185px;
+    margin-bottom: 30px;
+}
+
+#header_bg{
+    height: 130px;
+    background: url(../images/header_bg.jpg)repeat-x;
+	min-width:1320px;
+  
+}
+
+.menu_bg{
+     background: url(../images/menu_bg.png)repeat-x;
+     min-width:1320px;
+}
+
+nav{
+    height: 63px;
+    max-width:1200px;
+    min-width:980px;
+    position:relative;
+    margin: 0 auto;
+}
+
+nav ul{
+    float: right;
+    margin-right: 100px;
+}
+nav ul li{
+     float: left;
+     margin-top: 1px;
+}
+nav ul li a{
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding:18px 15px;
+    color: white;
+    display:block;
+    transition: 0.5s; 
+}
+
+nav ul li a:hover{
+    background: #ff6666;
+    transition: 0.5s; 
+    margin-left: 7px;
+}
+
+
+.menu__list{ 
+position: relative; 
+} 
+
+.menu__drop li a{
+    width: 160px;
+    border-bottom:1px solid #666;
+}
+.menu__drop li a:hover{
+    margin-left:0;
+}
+.menu__drop{ 
+position: absolute; 
+opacity:0; 
+z-index: 2; 
+margin-top: 4px;
+top:-9999em; 
+transition: 0.5s opacity; 
+background: #333;
+} 
+.menu__list:hover .menu__drop{ 
+opacity: 1; 
+top: 49px; 
+} 
+/*Конец всплывающего меню*/ 
+
+/*иконки для всплывающих менюшек*/ 
+.menu__list::after{ 
+content:" "; 
+position: absolute; 
+border: 5px solid; 
+border-color: transparent transparent #ff6666 transparent; 
+bottom: 2.1px; 
+right: 2.7em; 
+transition: 0.5s; 
+} 
+
+.menu__list:hover::after{ 
+transform: scaleY(-2); 
+} 
+
+#logo{
+    margin-left: 130px;
+    position: absolute;
+    margin-top: -17px;
+}
+
+section{
+     background: #fff;
+     padding-bottom:10px;
+     width: 960px;
+     padding: 10px;
+}
+
+.section_ongoing1{
+     background: #fff;
+     padding-bottom:10px;
+     width: 960px;
+     padding: 10px;
+     padding-bottom: 245px;
+}
+
+.section_ongoing{
+     background: #fff;
+     padding-bottom:10px;
+     width: 960px;
+     padding: 10px;
+     padding-bottom: 195px;
+}
+
+#wrapper{
+    padding-left: 18px;
+    margin: 0 auto;
+    max-width: 1319px;
+    min-width: 960px;
+    height: auto;
+}
+
+section article h2{
+    font-size: 44px;
+    margin-bottom: 5px;
+}
+
+section article .bg{
+    background: #FAFAFA;
+    padding:1px 10px 10px 10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+
+section article p span{
+    font: 14px sans-serif; 
+    color: rgb(175, 174, 174); 
+}
+
+section article .description{
+    margin-top: 30px;
+    size: 14px;
+    font-family: sans-serif;
+    color: rgb(121, 121, 121);
+    margin-bottom: 30px;
+}
+
+section article .date_{
+    margin-bottom: 6px;
+}
+
+section article .right{
+    float: right;
+    margin-top: -45px;
+    padding-right: 176px;
+}
+
+section article .right .genre{
+    color: black;
+}
+
+section article .screen,aside .screen{
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-top: 4px solid #FF6666;
+}
+
+aside .screen{
+    border-top:none;
+}
+
+aside{
+    margin-left: 10px;
+    padding-top: -30px;
+    width: 341px;
+    float: right;
+    height: 490px;
+    background: #FAFAFA;
+}
+
+
+aside img{
+    padding-left: 20px;
+    padding-top:20px;
+    
+}
+
+aside p span,aside .screen{
+    margin-left:7px;
+}
+
+aside p{
+    font-size: 20px;
+}
+
+aside p span{
+    color:red;
+    font-size: 25px;
+}
+
+section article video{
+    margin-left: 58px;
+    margin-bottom: 20px;
+}
+
+footer{
+    min-width: 1320px;
+    background:  #282828;
+    height: auto;
+    overflow: hidden;
+}
+
+footer .footer_content{
+    width: 1200px;
+    margin:0 auto;
+    margin-top: 28px;
+
+}
+
+footer .footer_box{
+    width: 250px;
+    float: left;
+    margin-left:60px;
+    margin-bottom: 40px;
+    color:#fff;
+}
+
+footer .footer_box h2{
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+
+footer .footer_box ul li{
+    margin-top: 18px;
+}
+
+footer .footer_box ul li a{
+     color:#fff;
+     text-decoration: none;
+     padding:10px 10px;
+     transition: 0.5s all;
+}
+
+footer .footer_box ul li a:hover{
+    background: #E70C2F;
+    padding: 10px 20px 10px 20px;
+}
+
+footer .footer_box ul li a::before{
+    content: "\203A";
+    margin-right: 15px;
+}
+
+
+
+footer .footer_box:first-child{
+    width: 200px;
+    line-height: 1.1em;
+}
+
+.rating {
+    position:relative;
+    height:280px;
+    width:385px;
+    margin:0 auto;
+    cursor:pointer;
+    z-index: 0;
+}
+/*Свойства для изображения в контейнере*/
+.rating .highslide-gallery img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+/*100% прозрачность при наведении на изображение*/
+.rating .highslide-gallery img.img_bottom:hover {
+    opacity:0.2;
+}
+
+.warning{
+    font-size: 12px;
+    color: #BAC0CC;
+    margin-left: 58px;
+    margin-bottom: 3px;
+    line-height: 1.4em;
+    width: 800px;
+}
+
+.warning::before{
+    content: "*";
+    margin-left: -8px;
+    padding-right: 2px;
+}
